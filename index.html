@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#163d32">
+  <meta name="description" content="MonNat.org — a community portal for Mon history, culture, news and resources.">
+  <title>MonNat.org — Mon Heritage & Community</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="topline"><div class="wrap top-inner"><span>MON HERITAGE • CULTURE • COMMUNITY</span><span class="top-right">A shared home for Mon knowledge</span></div></div>
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="#home" aria-label="MonNat.org home">
+        <span class="brand-mark">မ</span><span><strong>MonNat<span>.org</span></strong><small>MON COMMUNITY ARCHIVE</small></span>
+      </a>
+      <div class="nav-tools">
+        <label class="language-control" for="languageChoice"><span class="sr-only">Website language</span>
+          <select id="languageChoice" aria-label="Website language" onchange="if(this.value) window.location.href=this.value">
+            <option value="/mon.html">Mon</option>
+            <option value="/myanmar.html">မြန်မာ</option>
+            <option value="/index.html" selected>English</option>
+            <option value="/thai.html">ไทย</option>
+          </select>
+        </label>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      </div>
+      <nav id="mainNav" aria-label="Main navigation">
+        <a class="active" href="#home">Home</a><a href="#news">News</a><a href="#about">About</a><a href="#contact">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="wrap hero-content">
+        <div class="eyebrow"><span></span> OUR HISTORY. OUR VOICE. OUR FUTURE.</div>
+        <h1>Keep Mon heritage<br><em>alive for generations.</em></h1>
+        <p>A digital home for Mon history, language, culture, community news and the people preserving our heritage.</p>
+        <div class="hero-actions"><a class="btn btn-gold" href="#discover">Explore Mon Heritage <span>↗</span></a><a class="text-link" href="#about">Discover our mission <span>→</span></a></div>
+        <div class="hero-note"><span class="note-icon">✦</span><span><b>Knowledge connects us.</b><br>Culture carries us forward.</span></div>
+      </div>
+      <div class="hero-stamp">MON<br><span>မွန်</span></div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="wrap intro-grid">
+        <div><div class="eyebrow dark"><span></span> WELCOME TO MONNAT.ORG</div><h2>One community.<br><em>Many stories.</em></h2></div>
+        <div class="intro-copy"><p>MonNat.org is a community-focused portal created to help Mon people discover, preserve and share the history and culture of the Mon people.</p><p>Explore learning resources, read community news, and find websites and projects created by Mon communities around the world.</p><a class="under-link" href="#discover">Start exploring <span>→</span></a></div>
+      </div>
+    </section>
+
+    <section class="discover section" id="discover">
+      <div class="wrap">
+        <div class="section-heading"><div><div class="eyebrow dark"><span></span> EXPLORE & LEARN</div><h2>Discover Mon heritage</h2></div><p>Start with a topic and follow the story.<br>Use the search to find related Wikipedia articles.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card history-card"><div class="card-icon">⌂</div><span class="card-kicker">HISTORY</span><h3>History of the Mon</h3><p>Explore the kingdoms, communities and historical milestones that shaped Mon identity.</p><a href="https://en.wikipedia.org/wiki/Mon_people" target="_blank" rel="noopener">Read background <span>↗</span></a></article>
+          <article class="feature-card language-card"><div class="card-icon">文</div><span class="card-kicker">LANGUAGE</span><h3>Mon language</h3><p>Discover the Mon language, writing system and the importance of passing them on.</p><a href="https://en.wikipedia.org/wiki/Mon_language" target="_blank" rel="noopener">Explore language <span>↗</span></a></article>
+          <article class="feature-card culture-card"><div class="card-icon">✺</div><span class="card-kicker">CULTURE</span><h3>Culture & traditions</h3><p>Learn about cultural practices, arts, festivals and living traditions in Mon communities.</p><a href="https://en.wikipedia.org/wiki/Mon_people" target="_blank" rel="noopener">Explore culture <span>↗</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wiki-section section">
+      <div class="wrap wiki-grid">
+        <div class="wiki-copy"><div class="eyebrow"><span></span> COMMUNITY KNOWLEDGE</div><h2>Search the<br><em>Mon Wikipedia.</em></h2><p>Search for Mon-related topics and discover articles from Wikipedia. Results open at their original source so readers can review the full article and its references.</p><div class="source-note">ⓘ Search results depend on the selected Wikipedia language edition. If the Mon-language edition is unavailable, try English or Thai.</div></div>
+        <div class="wiki-panel"><div class="panel-top"><span class="live-dot"></span> WIKIPEDIA ARTICLE SEARCH <span class="panel-badge">LIVE SEARCH</span></div>
+          <form id="wikiForm" class="search-form"><label for="wikiQuery">What would you like to learn about?</label><div class="search-row"><input id="wikiQuery" type="search" placeholder="e.g. Mon people, Mon language…" required><button type="submit" aria-label="Search">⌕</button></div><div class="search-options"><label for="wikiLang">Language edition</label><select id="wikiLang"><option value="mnw">Mon (mnw)</option><option value="en">English</option><option value="th">Thai</option></select></div></form>
+          <div id="wikiStatus" class="wiki-status" aria-live="polite">Try a search above to find articles.</div><div id="wikiResults" class="wiki-results"></div>
+          <div class="wiki-footer">Powered by the Wikipedia / MediaWiki API · <a href="https://www.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="community section" id="news">
+      <div class="wrap">
+        <div class="section-heading"><div><div class="eyebrow dark"><span></span> CONNECT & PARTICIPATE</div><h2>Mon community links</h2></div><p>Discover Mon-created projects, community media<br>and trusted news sources.</p></div>
+        <div class="community-grid">
+          <article class="link-card"><div class="link-symbol">↗</div><div><span class="card-kicker">COMMUNITY</span><h3>Mon-created websites</h3><p>Explore websites, archives and digital projects built by Mon people.</p></div><a href="https://www.google.com/search?q=Mon+community+websites" target="_blank" rel="noopener" aria-label="Search Mon-created websites">↗</a></article>
+          <article class="link-card"><div class="link-symbol">◉</div><div><span class="card-kicker">NEWS & MEDIA</span><h3>Mon news and updates</h3><p>Find reporting and updates from Mon-focused news outlets.</p></div><a href="https://www.google.com/search?q=Mon+news" target="_blank" rel="noopener" aria-label="Search Mon news">↗</a></article>
+          <article class="link-card"><div class="link-symbol">▤</div><div><span class="card-kicker">RESEARCH</span><h3>History & learning resources</h3><p>Find books, educational resources and historical research about Mon people.</p></div><a href="https://www.google.com/search?q=Mon+people+history+resources" target="_blank" rel="noopener" aria-label="Search Mon history resources">↗</a></article>
+        </div>
+        <p class="curation-note">These are discovery links, not endorsements. Please verify each source and send us trusted Mon community links to add to this directory.</p>
+      </div>
+    </section>
+
+    <section class="contact-band" id="contact"><div class="wrap contact-inner"><div><div class="eyebrow"><span></span> HELP BUILD THE ARCHIVE</div><h2>Have a Mon story or resource to share?</h2><p>Help make Mon knowledge easier to discover for the next generation.</p></div><a class="btn btn-light" href="mailto:hello@monnat.org?subject=MonNat.org%20Community%20Contribution">Contact MonNat.org <span>→</span></a></div></section>
+  </main>
+
+  <footer><div class="wrap footer-main"><a class="brand footer-brand" href="#home"><span class="brand-mark">မ</span><span><strong>MonNat<span>.org</span></strong><small>MON COMMUNITY ARCHIVE</small></span></a><p>Preserving knowledge. Connecting communities.<br>Celebrating Mon heritage.</p><div class="footer-nav"><a href="#home">Home</a><a href="#news">News</a><a href="#about">About</a><a href="#contact">Contact</a></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> MonNat.org · Community project concept</span><span>Wikipedia content remains subject to its original license and attribution requirements.</span></div></footer>
+  <script src="/app.js"></script>
+</body>
+</html>

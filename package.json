@@ -1,0 +1,9 @@
+{
+  "name": "monnat-org",
+  "version": "1.0.0",
+  "description": "Mon community, history, news and resources portal",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}
